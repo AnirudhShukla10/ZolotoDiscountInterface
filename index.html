@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoloto Valves Discount Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Zoloto Valves Discount Interface</h1>
+</header>
+
+<div class="container">
+    <main>
+        <section id="product-selection">
+            <h2>Select Product and Size</h2>
+            <label for="product">Product:</label>
+            <select id="product">
+                <option value="FORGED_BRASS_BALL_VALVE">FORGED BRASS BALL VALVE (SCREWED)</option>
+            </select>
+            <br>
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="8MM">8MM</option>
+                <option value="10MM">10MM</option>
+                <option value="15MM">15MM</option>
+                <option value="20MM">20MM</option>
+                <option value="25MM">25MM</option>
+                <option value="32MM">32MM</option>
+                <option value="40MM">40MM</option>
+                <option value="50MM">50MM</option>
+                <option value="65MM">65MM</option>
+                <option value="80MM">80MM</option>
+                <option value="100MM">100MM</option>
+            </select>
+            <br>
+            <button id="calculate-price">Calculate Price</button>
+            <p id="original-price"></p>
+        </section>
+
+        <section id="discount-application">
+            <h2>Apply Discounts</h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="special-trade-discount"> Special Trade Discount (5%)</label>
+                <label><input type="checkbox" id="project-discount"> Project Discount (5%)</label>
+                <label><input type="checkbox" id="tod-discount"> TOD (5%)</label>
+                <label><input type="checkbox" id="target-sales-discount"> Target Sales Discount (25%)</label>
+                <label><input type="checkbox" id="gst"> GST (18%)</label>
+            </div>
+
+            <button id="apply-discounts">Apply Discounts</button>
+            <div id="discount-breakdown"></div>
+            <p id="final-price"></p>
+            <button id="add-to-cart">Add to Cart</button>
+        </section>
+    </main>
+    <aside id="cart">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Final Price (₹)</th>
+            </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2025. All rights reserved by Anirudh Shukla.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
